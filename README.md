@@ -41,11 +41,12 @@ $cmb->add_field( [
 ```
 
 ### Querying the REST API
-For each field that has rest_query set, 2 parameters will be available in the REST request on each post type that this field's metabox is registered on:
+For each field that has rest_query set, 3 parameters will be available in the REST request on each post type that this field's metabox is registered on:
 - the field's rest_query value or id (as defined above)
-- the above parameter appened with _compare
+- the above parameter appended with _compare
+- the above parameter appended with _type
 
-Adding the field's query parameter to the request will add that field to the request's meta query. By default compare will be '=' but using the {rest_query}_compare parameter, this can be changed to any option allowed by [WP_Query](https://developer.wordpress.org/reference/classes/wp_meta_query/)
+Adding the field's query parameter to the request will add that field to the request's meta query. By default compare will be '=' but using the {rest_query}_compare parameter, this can be changed to any option allowed by [WP_Meta_Query](https://developer.wordpress.org/reference/classes/wp_meta_query/). The type of the query parameter will be set to 'CHAR' by default but this can be overwritten using {rest_query}_type, again with the values allowd in WP_Meta_Query.
 
 Following the above example a query could look like:
 ```javascript

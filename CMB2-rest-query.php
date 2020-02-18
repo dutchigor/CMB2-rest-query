@@ -103,10 +103,15 @@ class FG_REST_query {
                             'key'       => $field['id'],
                             'value'     => $request[ $param ],
                             'compare'   => $request["{$param}_compare"] ?: '=',
+                            'type'      => $request["{$param}_type"] ?: 'CHAR',
                         ];
                     }
                 }
             }
+        }
+
+        if ( $args['meta_query'] && $request['meta_rel'] ) {
+            $args['meta_query']['relation'] = $request['meta_rel'];
         }
 
         // Let WP Carry on with it's business
