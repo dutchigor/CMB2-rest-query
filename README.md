@@ -3,12 +3,10 @@ Adds a query parameter to the REST API for any CMB2 field that has the property 
 
 ## How to install
 Option one
-- Clone this plugin in to your wordpress plugin directory
+- Clone or download and unzip this plugin in to your WordPress plugin directory and active.
 
 Option two
-- Download this plugin as a zip and add this zip as a plugin upload in your Wrodress admin area
-
-In both cases, activate the plugin in wordpress
+- Add dutchigor/cmb2-rest-query to required packages in composer and require CMB2-rest-query.php in your code
 
 ## How to use
 ### Setting up the metabox in CMB2
