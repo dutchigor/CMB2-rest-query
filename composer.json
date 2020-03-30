@@ -1,0 +1,18 @@
+{
+    "name": "dutchigor/cmb2-rest-query",
+    "description": "Adds a query parameter to the REST API for any CMB2 field that has the property rest_query set on it.",
+    "type": "wordpress-plugin",
+    "keywords": ["rest", "wordpress", "metabox", "cmb2", "search"],
+    "homepage": "https://github.com/dutchigor/CMB2-rest-query",
+    "license": "GPL-3.0-or-later",
+    "authors": [{
+        "name": "Igor Honhoff",
+        "homepage": "https://github.com/dutchigor"
+    }],
+    "support": {
+        "issues": "https://github.com/dutchigor/CMB2-rest-query/issues"
+    },
+    "require": {
+        "php": ">7.0.0"
+    }
+}
